@@ -6,9 +6,72 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
-<body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+<body id="body">
+    
+    <div class="conatiner">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Kérem adja meg a kép nevét
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="kepURL">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>Kérem adja meg a kép szélességét (Pixelbe megadva)
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="number" id="kepSzelesseg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>Kérem adja meg a képkeret vastagságát
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="number" id="keretSzelesseg">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Kép keret színe: <input type="color" id="keretSzíne"></p>
+        </div>
+    </div>
+        
+
+    <button id="betolt">Betolt</button>
+
+    <output>
+        <img src="../src/cica.jpg" id="URLmegjelenites">
+    </output>
+
+      <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <p>Radeczki Krisztian 2020.09.19 </p>
+                    <button id="dark">Sötét</button>
+                    <button id="light">Vilagos</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+  </footer>
+  <script src='main.js'></script>
 </body>
 </html>
